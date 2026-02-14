@@ -1,0 +1,19 @@
+{
+  "message_type": "pacs.008",
+  "required_fields": {
+    "MsgId": [".//GrpHdr/MsgId"],
+    "TxId": [
+      ".//CdtTrfTxInf/PmtId/TxId",
+      ".//CdtTrfTxInf/PmtId/EndToEndId",
+      ".//CdtTrfTxInf/PmtId/InstrId"
+    ],
+    "DebtorName": [".//CdtTrfTxInf/Dbtr/Nm"],
+    "CreditorName": [".//CdtTrfTxInf/Cdtr/Nm"],
+    "Amount": [".//CdtTrfTxInf/Amt/InstdAmt"],
+    "Currency": [".//CdtTrfTxInf/Amt/InstdAmt"]
+  },
+  "optional_fields": {
+    "RemittanceInformation": [".//CdtTrfTxInf/RmtInf/Ustrd"],
+    "CategoryPurpose": [".//CdtTrfTxInf/PmtTpInf/CtgyPurp/Cd"]
+  }
+}
